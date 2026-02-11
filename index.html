@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ADJI AHOLIA WILFRIED CHEREL">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="calculatrice">
+        <div class="ecran">
+            <div class="calcul-precedent" id="calcul-precedent"></div>
+            <div class="calcul-actuel" id="calcul-actuel">0</div>
+        </div>
+        <div class="boutons">
+            <button class="bouton gris" onclick="effacerTout()">AC</button>
+            <button class="bouton gris" onclick="effacer()">DEL</button>
+            <button class="bouton gris"onclick="ajouterOperateur('%')">%</button>
+            <button class="bouton orange" onclick="ajouterOperateur('/')">/</button>
+
+            <button class="bouton" onclick="ajouterNombre('7')">7</button>
+            <button class="bouton" onclick="ajouterNombre('8')">8</button>
+            <button class="bouton" onclick="ajouterNombre('9')">9</button>
+            <button class="bouton orange" onclick="ajouterOperateur('*')">x</button>
+           
+            <button class="bouton"onclick="ajouterNombre('4')">4</button>
+            <button class="bouton"onclick="ajouterNombre('5')">5</button>
+            <button class="bouton"onclick="ajouterNombre('6')">6</button>
+            <button class="bouton orange"onclick="ajouterOperateur('-')">-</button>
+            
+            <button class="bouton"onclick="ajouterNombre('1')">1</button>
+            <button class="bouton"onclick="ajouterNombre('2')">2</button>
+            <button class="bouton"onclick="ajouterNombre('3')">3</button>
+            <button class="bouton orange" onclick="ajouterOperateur('+')">+</button>
+            
+            <button class="bouton zero"onclick="ajouterNombre('0')">0</button>
+            <button class="bouton"onclick="ajouterNombre('.')">.</button>
+            <button class="bouton orange"onclick="calculer()">=</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
